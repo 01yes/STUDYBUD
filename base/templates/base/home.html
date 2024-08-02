@@ -57,6 +57,13 @@
 
     <!-- Activities End -->
   </div>
+  <div class="container">
+    <h1>Welcome to StudyBuddy</h1>
+    <a href="{% url 'delete-old-data' %}" class="btn btn--danger" onclick="return confirm('Are you sure you want to delete all messages and rooms older than one year?');">
+        Delete Old Messages and Rooms
+    </a>
+    <!-- Other content of the home page -->
+</div>
 </main>
 
 {% endblock %}
